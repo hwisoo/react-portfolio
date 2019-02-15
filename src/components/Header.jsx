@@ -47,10 +47,6 @@ function Header() {
       </style>
       <h1 id="headerMain">James Cho : Portfolio Page</h1>
 
-      <Link to="/home">
-        <button>Home </button>
-      </Link>
-
       <Link to="/about">
         <button>About</button>
       </Link>
