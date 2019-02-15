@@ -25,18 +25,21 @@ class Project extends React.Component {
             .card:hover {
               margin-top: 0;
               box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-              width: 21vw;
+              width: 20vw;
+              height: 370px;
               border: 2px solid #19194d;
             }
 
             .card img {
               height: 40%;
-              width: 90%;
+              width: 70%;
+              margin: auto;
             }
 
             .card img:hover {
               height: 45%;
-              width: 95%;
+              width: 75%;
+              margin: auto;
             }
 
             .card-title {

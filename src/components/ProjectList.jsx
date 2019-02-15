@@ -3,6 +3,7 @@ import Project from './Project';
 import nba from '../assets/images/nba_project.png';
 import doctor from '../assets/images/doctor_project.png';
 import furniture from '../assets/images/furniture_project.png';
+import tv from '../assets/images/tv_project.png';
 
 const projectsList = [
   {
@@ -26,6 +27,13 @@ const projectsList = [
     description:
       'A web app that outputs a list of furnitures by type and item details for each item using API calls',
     img: furniture
+  },
+  {
+    title: 'TV Runtime App',
+    link: 'https://github.com/hwisoo/tv-runtime-api',
+    description:
+      'A simple web app, that takes the user input tv genre and outputs a list of relevant shows sorted by popularity using TV database API',
+    img: tv
   }
 ];
 
