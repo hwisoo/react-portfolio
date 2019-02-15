@@ -4,6 +4,10 @@
 
 #### By _**James Cho**_
 
+## Component Hierarchy
+
+[[https://github.com/hwisoo/react-portfolio/src/assets/images/structure.jpg|alt=structure]]
+
 ## Description
 
 My portfolio website to showcase projects and to display relevant contact information.
