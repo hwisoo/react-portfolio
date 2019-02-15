@@ -34,6 +34,10 @@ function Header() {
             border-radius: 10%;
             margin: 10px;
           }
+          button:hover {
+            font-size: 1.6vw;
+            border: 3px solid #003399;
+          }
           .grid {
             display: grid;
             grid-template-columns: 20vw 20vw 20vw 20vw;

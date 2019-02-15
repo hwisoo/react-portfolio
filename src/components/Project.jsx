@@ -36,12 +36,6 @@ class Project extends React.Component {
               margin: auto;
             }
 
-            .card img:hover {
-              height: 45%;
-              width: 75%;
-              margin: auto;
-            }
-
             .card-title {
               padding-top: 20px;
               padding-bottom: 20px;
