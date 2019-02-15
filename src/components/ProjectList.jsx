@@ -1,6 +1,8 @@
 import React from 'react';
 import Project from './Project';
 import nba from '../assets/images/nba_project.png';
+import doctor from '../assets/images/doctor_project.png';
+import furniture from '../assets/images/furniture_project.png';
 
 const projectsList = [
   {
@@ -9,21 +11,39 @@ const projectsList = [
     description:
       'Rebuild of NBA.com using Angular, dynamic routing and services',
     img: nba
+  },
+  {
+    title: 'Better Doctor App',
+    link:
+      'https://github.com/hhttps://github.com/hwisoo/js-better-doctor-apiwisoo/tv-runtime-api/',
+    description:
+      'A web app that outputs a list of relevant doctors and the details of each doctor using API calls',
+    img: doctor
+  },
+  {
+    title: 'Furniture App',
+    link: 'https://github.com/hwisoo/furniture-store',
+    description:
+      'A web app that outputs a list of furnitures by type and item details for each item using API calls',
+    img: furniture
   }
 ];
 
 function ProjectsList() {
   return (
     <div>
-      {projectsList.map((project, index) => (
-        <Project
-          title={project.title}
-          link={project.link}
-          description={project.description}
-          img={project.img}
-          key={index}
-        />
-      ))}
+      <h1>Projects</h1>
+      <div className="grid">
+        {projectsList.map((project, index) => (
+          <Project
+            title={project.title}
+            link={project.link}
+            description={project.description}
+            img={project.img}
+            key={index}
+          />
+        ))}
+      </div>
     </div>
   );
 }

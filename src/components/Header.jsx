@@ -34,6 +34,11 @@ function Header() {
             border-radius: 10%;
             margin: 10px;
           }
+          .grid {
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw 20vw;
+            grid-gap: 20px;
+          }
         `}
       </style>
       <h1 id="headerMain">James Cho : Portfolio Page</h1>
