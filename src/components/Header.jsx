@@ -6,22 +6,32 @@ function Header() {
     <div>
       <style jsx>
         {`
+          body {
+            margin: 0;
+          }
           div {
             text-align: center;
           }
-
-          button {
-            font-size: 2vw;
+          #headerMain {
+            font-size: 2.5rem;
+            padding: 40px;
+            background-color: #4080bf;
             color: #fff;
+            margin: 0;
+          }
+          button {
+            font-size: 1.4vw;
+            color: #fff;
+            min-height: 50px;
             background-color: #003399;
             width: 10vw;
             height: 6vh;
-            border-radius: 5%;
+            border-radius: 10%;
             margin: 10px;
           }
         `}
       </style>
-      <h1>James Cho : Portfolio Page</h1>
+      <h1 id="headerMain">James Cho : Portfolio Page</h1>
 
       <Link to="/home">
         <button>Home </button>
