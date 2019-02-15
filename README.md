@@ -6,7 +6,7 @@
 
 ## Component Hierarchy
 
-[https://github.com/hwisoo/react-portfolio/src/assets/images/structure.jpg|alt=structure]
+[https://github.com/hwisoo/react-portfolio/src/assets/images/structure.jpg]
 
 ## Description
 
