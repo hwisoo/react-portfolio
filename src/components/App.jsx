@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import About from './About';
-import Projects from './Projects';
+import ProjectsList from './ProjectList';
 // import globalStyles from '../assets/styles/global.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/projects" component={ProjectsList} />
       </Switch>
     </div>
   );

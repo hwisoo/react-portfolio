@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div>
+    <div id="headerContainer">
       <style jsx>
         {`
           body {
@@ -12,10 +12,15 @@ function Header() {
           div {
             text-align: center;
           }
+
+          #headerContainer {
+            margin-bottom: 20px;
+          }
+
           #headerMain {
             font-size: 2.5rem;
             padding: 40px;
-            background-color: #4080bf;
+            background-color: #003399;
             color: #fff;
             margin: 0;
           }
@@ -23,7 +28,7 @@ function Header() {
             font-size: 1.4vw;
             color: #fff;
             min-height: 50px;
-            background-color: #003399;
+            background-color: #4080bf;
             width: 10vw;
             height: 6vh;
             border-radius: 10%;
