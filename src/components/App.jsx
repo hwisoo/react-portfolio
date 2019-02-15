@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import About from './About';
 import Projects from './Projects';
+// import globalStyles from '../assets/styles/global.css';
 
 function App() {
   return (
