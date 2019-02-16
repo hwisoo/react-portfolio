@@ -20,7 +20,7 @@ function Header() {
           #headerMain {
             font-size: 2.5rem;
             padding: 40px;
-            background-color: #003399;
+            background-color: #4080bf;
             color: #fff;
             margin: 0;
           }
@@ -28,7 +28,7 @@ function Header() {
             font-size: 1.4vw;
             color: #fff;
             min-height: 50px;
-            background-color: #4080bf;
+            background-color: #19194d;
             width: 10vw;
             height: 6vh;
             border-radius: 10%;

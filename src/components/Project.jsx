@@ -39,7 +39,8 @@ class Project extends React.Component {
             .card-title {
               padding-top: 20px;
               padding-bottom: 20px;
-              background-color: #19194d;
+              background-color: #bac7f7;
+
               color: #fff;
             }
           `}
