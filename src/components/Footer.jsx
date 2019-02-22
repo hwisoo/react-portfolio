@@ -6,7 +6,6 @@ const footerStyle = {
   color: 'white',
   borderTop: '1px solid #E7E7E7',
   textAlign: 'center',
-  padding: '20px',
   paddingBottom: '30px',
   position: 'fixed',
   left: '0',

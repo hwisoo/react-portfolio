@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
+import aboutImg from '../assets/images/about.jpg';
 
 function About() {
   return (
@@ -14,6 +14,7 @@ function About() {
       </style>
       <h1>About</h1>
       <h2>Hi! My name is James.</h2>
+      <img src={aboutImg} />
       <p>
         I'm a developer based in the Seattle area, focusing on Angular and
         React. I am currently enrolled in Epicodus coding bootcamp to learn to
