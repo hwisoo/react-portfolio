@@ -27,50 +27,6 @@ class Project extends React.Component {
   render() {
     return (
       <div>
-        <style jsx>
-          {`
-            .card {
-              margin-top: 20px;
-              color: #19194d;
-              text-align: center;
-              margin-left: 30px;
-              box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.2);
-              transition: 0.3s;
-              width: 20vw;
-            }
-
-            .card:hover {
-              cursor: pointer;
-              margin-top: 0;
-              box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-              width: 20vw;
-              border: 2px solid #19194d;
-            }
-
-            .card-title {
-              padding-top: 20px;
-              padding-bottom: 20px;
-              color: #fff;
-            }
-
-            .projectModal {
-              color: white;
-              background-color: slateblue;
-              margin-top: 10vh;
-              margin-left: 30vw;
-              width: 30vw;
-            }
-
-            .projectModal img {
-              width: 80%;
-            }
-
-            .projectModal a {
-              color: white;
-            }
-          `}
-        </style>
-
         <div
           className="card"
           onClick={() => {

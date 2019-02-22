@@ -4,14 +4,6 @@ import aboutImg from '../assets/images/about.jpg';
 function About() {
   return (
     <div id="aboutMain">
-      <style jsx>
-        {`
-          #aboutMain {
-            width: 60%;
-            margin: auto;
-          }
-        `}
-      </style>
       <h1>About</h1>
       <h2>Hi! My name is James.</h2>
       <img src={aboutImg} />

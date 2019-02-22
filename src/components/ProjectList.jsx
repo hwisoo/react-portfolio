@@ -38,7 +38,7 @@ const projectsList = [
 
 function ProjectsList() {
   return (
-    <div>
+    <div id="projectsMain">
       <h1>Projects</h1>
       <div className="grid">
         {projectsList.map((project, index) => (
