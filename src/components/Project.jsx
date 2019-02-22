@@ -40,6 +40,7 @@ class Project extends React.Component {
             }
 
             .card:hover {
+              cursor: pointer;
               margin-top: 0;
               box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
               width: 20vw;
@@ -49,9 +50,23 @@ class Project extends React.Component {
             .card-title {
               padding-top: 20px;
               padding-bottom: 20px;
-              background-color: #bac7f7;
-
               color: #fff;
+            }
+
+            .projectModal {
+              color: white;
+              background-color: slateblue;
+              margin-top: 10vh;
+              margin-left: 30vw;
+              width: 30vw;
+            }
+
+            .projectModal img {
+              width: 80%;
+            }
+
+            .projectModal a {
+              color: white;
             }
           `}
         </style>
@@ -68,14 +83,19 @@ class Project extends React.Component {
         </div>
 
         <Modal
+          className="projectModal"
           isOpen={this.state.isOpen}
-          contentLabel="Modal Example"
           link={this.props.link}
           description={this.props.description}
-          img={this.props.img}
         >
           <h2>{this.props.project.title}</h2>
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          <img src={this.props.project.img} />
+          <br />
+          <a href={this.props.project.link} target="_blank">
+            {this.props.project.link}
+          </a>
+          <p>{this.props.project.description}</p>
+          <button onClick={this.handleCloseModal}>Close</button>
         </Modal>
       </div>
     );
@@ -83,6 +103,7 @@ class Project extends React.Component {
 }
 
 Project.propTypes = {
+  project: PropTypes.object,
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

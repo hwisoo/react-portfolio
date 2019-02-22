@@ -5,7 +5,7 @@ import About from './About';
 import ProjectsList from './ProjectList';
 import Error404 from './Error404';
 import Footer from './Footer';
-// import globalStyles from '../assets/styles/global.css';
+import globalStyles from '../assets/styles/global.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={globalStyles}>
         <Header />
         <Switch>
           <Route path="/about" component={About} />

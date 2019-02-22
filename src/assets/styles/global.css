@@ -1,19 +1,52 @@
-/* permanent-marker-regular - latin */
-@font-face {
-  font-family: 'Permanent Marker';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/permanent-marker-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'),
-    url('../fonts/permanent-marker-v7-latin-regular.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */ url('../fonts/permanent-marker-v7-latin-regular.woff2')
-      format('woff2'),
-    /* Super Modern Browsers */
-      url('../fonts/permanent-marker-v7-latin-regular.woff') format('woff'),
-    /* Modern Browsers */ url('../fonts/permanent-marker-v7-latin-regular.ttf')
-      format('truetype'),
-    /* Safari, Android, iOS */
-      url('../fonts/permanent-marker-v7-latin-regular.svg#PermanentMarker')
-      format('svg'); /* Legacy iOS */
+body {
+  background-color: #3aafa9;
+  color: #def2f1;
+}
+
+#headerContainer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#headerMain {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 40px;
+  background-color: #2b7a78;
+  color: #def2f1;
+  margin: 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+#headerContainer button {
+  font-size: 1.4vw;
+  color: #def2f1;
+  min-height: 50px;
+  background-color: #17252a;
+  width: 10vw;
+  height: 6vh;
+  border-radius: 10%;
+  margin: 10px;
+}
+button:hover {
+  font-size: 1.6vw;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-gap: 20px;
+}
+
+.footer {
+  font-size: 13px;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  padding-bottom: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #2b7a78;
 }
