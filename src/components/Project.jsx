@@ -1,9 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Modal from 'react-modal';
 
 class Project extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isOpen: false
+    };
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+
+  componentDidMount() {
+    Modal.setAppElement('body');
+  }
+
+  handleOpenModal() {
+    this.setState({ isOpen: true });
+  }
+
+  handleCloseModal() {
+    this.setState({ isOpen: false });
   }
 
   render() {
@@ -19,21 +37,13 @@ class Project extends React.Component {
               box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.2);
               transition: 0.3s;
               width: 20vw;
-              height: 350px;
             }
 
             .card:hover {
               margin-top: 0;
               box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
               width: 20vw;
-              height: 370px;
               border: 2px solid #19194d;
-            }
-
-            .card img {
-              height: 40%;
-              width: 70%;
-              margin: auto;
             }
 
             .card-title {
@@ -46,17 +56,27 @@ class Project extends React.Component {
           `}
         </style>
 
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => {
+            this.handleOpenModal();
+          }}
+        >
           <h2 className="card-title">
-            <b>{this.props.title}</b>
+            <b>{this.props.project.title}</b>
           </h2>
-          <a target="_blank" href={this.props.link}>
-            <img src={this.props.img} />
-          </a>
-          <div>
-            <p>{this.props.description}</p>
-          </div>
         </div>
+
+        <Modal
+          isOpen={this.state.isOpen}
+          contentLabel="Modal Example"
+          link={this.props.link}
+          description={this.props.description}
+          img={this.props.img}
+        >
+          <h2>{this.props.project.title}</h2>
+          <button onClick={this.handleCloseModal}>Close Modal</button>
+        </Modal>
       </div>
     );
   }

@@ -42,13 +42,7 @@ function ProjectsList() {
       <h1>Projects</h1>
       <div className="grid">
         {projectsList.map((project, index) => (
-          <Project
-            title={project.title}
-            link={project.link}
-            description={project.description}
-            img={project.img}
-            key={index}
-          />
+          <Project project={project} key={index} />
         ))}
       </div>
     </div>
