@@ -44,14 +44,16 @@ class Project extends React.Component {
           link={this.props.link}
           description={this.props.description}
         >
-          <h2>{this.props.project.title}</h2>
-          <img src={this.props.project.img} />
-          <br />
-          <a href={this.props.project.link} target="_blank">
-            {this.props.project.link}
-          </a>
-          <p>{this.props.project.description}</p>
-          <button onClick={this.handleCloseModal}>Close</button>
+          <div>
+            <h2>{this.props.project.title}</h2>
+            <img src={this.props.project.img} />
+            <br />
+            <a href={this.props.project.link} target="_blank">
+              {this.props.project.link}
+            </a>
+            <p>{this.props.project.description}</p>
+            <button onClick={this.handleCloseModal}>Close</button>
+          </div>
         </Modal>
       </div>
     );

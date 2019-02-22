@@ -13,6 +13,9 @@ function Header() {
       <Link to="/projects">
         <button>Projects</button>
       </Link>
+      <Link to="/contact">
+        <button>Contact</button>
+      </Link>
     </div>
   );
 }

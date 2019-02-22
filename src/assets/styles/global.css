@@ -39,7 +39,7 @@ body {
 }
 
 #projectsMain {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .grid {
@@ -73,8 +73,8 @@ body {
 }
 
 .card:hover {
-  cursor: pointer;
   margin-top: 0;
+  cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   width: 20vw;
   border: 2px solid #17252a;
@@ -97,17 +97,25 @@ body {
 .projectModal button {
   font-size: 1vw;
   color: #def2f1;
+  min-height: 50px;
   background-color: #17252a;
   width: 5vw;
   height: 3vh;
   border-radius: 10%;
   margin: 10px;
 }
+.projectModal h2 {
+  padding-top: 20px;
+  text-align: center;
+}
 .projectModal img {
-  width: 80%;
+  width: 100%;
+  margin-left: 30px;
   margin: auto;
 }
 
-.projectModal a {
+.projectModal a,
+p {
+  margin-left: 20px;
   color: white;
 }
