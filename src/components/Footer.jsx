@@ -2,15 +2,16 @@ import React from 'react';
 
 const footerStyle = {
   backgroundColor: '#4080bf',
-  fontSize: '15px',
+  fontSize: '13px',
   color: 'white',
   borderTop: '1px solid #E7E7E7',
   textAlign: 'center',
   padding: '20px',
+  paddingBottom: '30px',
   position: 'fixed',
   left: '0',
   bottom: '0',
-  height: '30px',
+  height: '10px',
   width: '100%'
 };
 

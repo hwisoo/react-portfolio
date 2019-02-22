@@ -15,8 +15,7 @@ const projectsList = [
   },
   {
     title: 'Better Doctor App',
-    link:
-      'https://github.com/hhttps://github.com/hwisoo/js-better-doctor-apiwisoo/tv-runtime-api/',
+    link: 'https://github.com/hwisoo/js-better-doctor-api/',
     description:
       'A web app that outputs a list of relevant doctors and the details of each doctor using API calls',
     img: doctor
