@@ -8,6 +8,11 @@ import Error404 from './Error404';
 import Footer from './Footer';
 import globalStyles from '../assets/styles/global.css';
 
+//font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faEnvelope);
 class App extends React.Component {
   constructor(props) {
     super(props);

@@ -48,6 +48,19 @@ body {
   grid-gap: 20px;
 }
 
+#contactMain {
+  width: 60%;
+  margin: auto;
+}
+
+#contactMain img {
+  width: 20px;
+  height: 20px;
+}
+
+#contactMain a {
+  margin-top: 40px;
+}
 .footer {
   font-size: 13px;
   border-top: 1px solid #e7e7e7;
